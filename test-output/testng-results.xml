@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-28T15:42:08 IST" name="Default suite" finished-at="2024-08-28T15:49:19 IST" duration-ms="431233">
+    <groups>
+    </groups>
+    <test started-at="2024-08-28T15:42:08 IST" name="Default test" finished-at="2024-08-28T15:49:19 IST" duration-ms="431233">
+      <class name="Client_Project.LoanAppCreation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:00 IST" name="launchApplication" finished-at="2024-08-28T15:42:08 IST" duration-ms="7517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginPage(java.lang.String,java.lang.String)[pri:1, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:09 IST" name="LoginPage" data-provider="getLoginData" finished-at="2024-08-28T15:42:12 IST" duration-ms="3088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[unnati.mokal@rblbank.com.uat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Welcome#123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="LeadPageAccess()[pri:2, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:12 IST" name="LeadPageAccess" finished-at="2024-08-28T15:42:14 IST" depends-on-methods="Client_Project.LoanAppCreation.LoginPage" duration-ms="2220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeadPageAccess -->
+        <test-method signature="LeadFillDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:14 IST" name="LeadFillDetails" data-provider="getLeadData" finished-at="2024-08-28T15:42:17 IST" depends-on-methods="Client_Project.LoanAppCreation.LeadPageAccess" duration-ms="3001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Two Wheeler Loan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestFirstName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7345238756]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400017]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dealer]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Interested]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeadFillDetails -->
+        <test-method signature="ConvertToApplication()[pri:4, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:17 IST" name="ConvertToApplication" finished-at="2024-08-28T15:42:19 IST" depends-on-methods="Client_Project.LoanAppCreation.LeadFillDetails" duration-ms="1956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConvertToApplication -->
+        <test-method signature="CreateApp1(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:19 IST" name="CreateApp1" data-provider="ApplicationData1" finished-at="2024-08-28T15:42:41 IST" depends-on-methods="Client_Project.LoanAppCreation.ConvertToApplication" duration-ms="21819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEASINGA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[36]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp1 -->
+        <test-method signature="CreateApp2(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:6, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:42:41 IST" name="CreateApp2" data-provider="ApplicationData2" finished-at="2024-08-28T15:43:50 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp1" duration-ms="68869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Salaried]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Individual Cash salaried]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[22-Jul-1970]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp2 -->
+        <test-method signature="CreateApp3()[pri:7, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:43:50 IST" name="CreateApp3" finished-at="2024-08-28T15:44:30 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp2" duration-ms="40214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp3 -->
+        <test-method signature="CreateApp4(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:8, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:44:30 IST" name="CreateApp4" data-provider="ApplicationData4" finished-at="2024-08-28T15:46:40 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp3" duration-ms="129472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Voter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PSD1287675]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Married]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testmotherName]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[testSpouse]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApp4 -->
+        <test-method signature="ParmanentAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:46:40 IST" name="ParmanentAdd" data-provider="KYCaddress" finished-at="2024-08-28T15:47:40 IST" depends-on-methods="Client_Project.LoanAppCreation.CreateApp4" duration-ms="60347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Voter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testaddress]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testaddress]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[410206]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Same as Permanent Address]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[testaddress]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[testaddress]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[LandMark]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[410208]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Same as Current Address]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParmanentAdd -->
+        <test-method signature="SocioEconomicDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:10, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:47:40 IST" name="SocioEconomicDetails" data-provider="ecoDetails" finished-at="2024-08-28T15:48:03 IST" depends-on-methods="Client_Project.LoanAppCreation.ParmanentAdd" duration-ms="22796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hindu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OBC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Graduate]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Salaried]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Private Ltd]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Private]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[31_311-Private Banks]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Owned]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Greater than 10 Years]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[100000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[10-50 lakh]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[TestOne]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[01/01/2008]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[10-25 Lakh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SocioEconomicDetails -->
+        <test-method signature="AssetDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:48:03 IST" name="AssetDetails" data-provider="AssetDetails" finished-at="2024-08-28T15:48:25 IST" depends-on-methods="Client_Project.LoanAppCreation.SocioEconomicDetails" duration-ms="21930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Motorcycle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Retro Factory]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[120000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Hunter 350]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssetDetails -->
+        <test-method signature="Flowpage()[pri:12, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:48:25 IST" name="Flowpage" finished-at="2024-08-28T15:48:42 IST" depends-on-methods="Client_Project.LoanAppCreation.AssetDetails" duration-ms="16967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flowpage -->
+        <test-method signature="LoanEligibility()[pri:13, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:48:42 IST" name="LoanEligibility" finished-at="2024-08-28T15:48:58 IST" depends-on-methods="Client_Project.LoanAppCreation.Flowpage" duration-ms="16081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoanEligibility -->
+        <test-method signature="BankVerification()[pri:14, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:48:58 IST" name="BankVerification" finished-at="2024-08-28T15:49:19 IST" depends-on-methods="Client_Project.LoanAppCreation.LoanEligibility" duration-ms="20882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankVerification -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Client_Project.LoanAppCreation@7f485fda]" started-at="2024-08-28T15:49:20 IST" name="tearDown" finished-at="2024-08-28T15:49:20 IST" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Client_Project.LoanAppCreation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
